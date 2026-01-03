@@ -22,10 +22,14 @@ The **Online Food Ordering System** is a simple yet efficient application that a
 - **Add Product:** Add new menu items.
 - **Delete Product:** Remove items from the menu.
 - **Update Product:** Modify details of existing menu items.
+- **View Orders:** Filter orders by status (pending, in-progress, delivered, failed).
+- **Assign Orders to Delivery Staff:** Assign specific orders to delivery staff for delivery.
 
 ### Delivery Staff Features
 - **Register & Login:** Access the system for delivery operations.
 - **Track Orders:** View and manage assigned delivery orders.
+- **Update Order Status:** Update order status to pending, in-progress, delivered, or failed.
+- **View Delivery History:** See past deliveries and their details.
 
 ---
 
