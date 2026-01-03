@@ -7,11 +7,25 @@ The **Online Food Ordering System** is a simple yet efficient application that a
 
 ## Features
 
-| Actor | Features |
-|-------|---------|
-| **Customer** | Register & Login, View Menu, Add/Remove Items to Cart, Place Order, Cancel Order (Optional), Track Status (Optional), Payment Integration (Cash/Visa), View Order History |
-| **Manager**  | Register & Login, Add Product, Delete Product, Update Product |
-| **Delivery Staff** | Register & Login, Track Orders |
+### Customer Features
+- **Register & Login:** Customers can create accounts and log in securely.
+- **View Menu:** Browse available food items with prices.
+- **Add/Remove Items to Cart:** Customers can select items to add to or remove from their cart.
+- **Place Order:** Confirm and submit orders.
+- **Cancel Order (Optional):** Cancel orders before they are processed.
+- **Track Status (Optional):** Track order status using order ID and details (Delivered / Not yet).
+- **Payment Integration:** Supports cash or visa payments.
+- **Order History:** View past orders.
+
+### Manager Features
+- **Register & Login:** Secure manager access.
+- **Add Product:** Add new menu items.
+- **Delete Product:** Remove items from the menu.
+- **Update Product:** Modify details of existing menu items.
+
+### Delivery Staff Features
+- **Register & Login:** Access the system for delivery operations.
+- **Track Orders:** View and manage assigned delivery orders.
 
 ---
 
