@@ -42,3 +42,9 @@ The **Online Food Ordering System** is a simple yet efficient application that a
 | **Reliability** | Stable system with minimal downtime and errors. |
 
 ---
+
+## Class Diagram
+
+The system's classes and their relationships are represented in the diagram below:
+
+![Class Diagram](diagrams/Class Diagram.png)
