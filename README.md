@@ -47,4 +47,4 @@ The **Online Food Ordering System** is a simple yet efficient application that a
 
 The system's classes and their relationships are represented in the diagram below:
 
-![Class Diagram](diagrams/Class Diagram.png)
+![Class Diagram](diagrams/Class_Diagram.png)
