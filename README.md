@@ -73,3 +73,9 @@ The use case diagram below shows the interactions a customer can perform in the 
 
 ---
 
+2. Manager & Delivery Staff Use Case
+
+The use case diagram below shows the interactions for manager and delivery staff:
+![UseCase Manager & Delivery Staff](diagrams/Manager_Delivery.png)
+
+---
