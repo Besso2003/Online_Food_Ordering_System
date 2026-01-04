@@ -88,10 +88,12 @@ The activity diagram below illustrates the customer workflow from browsing the m
 
 ![Activity Customer Diagram](diagrams/Activity_Customer_Diagram.jpeg)
 
-----
+---
 
 2. Manager & Delivery Staff Activity Diagram
 
 The activity diagram below illustrates the manager and delivery staff workflow, including managing menu items and processing deliveries:
 
 ![Activity Manager & Delivery Diagram](diagrams/Activity_ManagerDelivery_Diagram.jpeg)
+
+---
