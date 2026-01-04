@@ -1,9 +1,15 @@
 # depslib dependency file v1.0
-1767550541 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.cpp
+1767565407 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.cpp
 	"Item.h"
 	<iostream>
+	<string>
+	<cstdlib>
+	<sstream>
 
-1767550541 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.h
+1767565858 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.h
+	<string>
+	<sstream>
+	<iostream>
 	<string>
 
 1767552530 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\main.cpp
@@ -11,11 +17,12 @@
 	"Item.h"
 	"Cart.h"
 
-1767553353 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.h
+1767565858 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.h
 	<map>
+	<utility>
 	"Item.h"
 
-1767559048 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.cpp
+1767565717 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.cpp
 	"Cart.h"
 	<iostream>
 

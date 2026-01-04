@@ -1,54 +1,66 @@
 #include "Cart.h"
 #include <iostream>
 
-void Cart::addItem(const Item& item, int quantity) {
-    int id = item.getId();
+using namespace std;
 
-    if (items.count(id)) {
-        items[id].second += quantity;
-    } else {
-        items[id] = make_pair(item, quantity);
-    }
-
+void Cart::addItem(int itemID, int quantity)
+{
+    items[itemID] += quantity;
     cout << "Item added to cart.\n";
 }
 
-void Cart::removeItem(int itemId) {
-    if (items.erase(itemId)) {
+void Cart::removeItem(int itemID)
+{
+    if (items.erase(itemID))
         cout << "Item removed from cart.\n";
-    } else {
+    else
         cout << "Item not found in cart.\n";
-    }
 }
 
-double Cart::calculateTotal() const {
+double Cart::calculateTotal(const map<int, Item>& menu) const
+{
     double total = 0;
 
-    for (const auto& entry : items) {
-        const Item& item = entry.second.first;
-        int quantity = entry.second.second;
-        total += item.getPrice() * quantity;
+    for (const auto& entry : items)
+    {
+        int itemID = entry.first;
+        int quantity = entry.second;
+
+        if (menu.count(itemID))
+            total += menu.at(itemID).getPrice() * quantity;
     }
 
     return total;
 }
 
-void Cart::displayCart() const {
+void Cart::displayCart(const map<int, Item>& menu) const
+{
     cout << "\n--- CART ITEMS ---\n";
 
-    if (items.empty()) {
+    if (items.empty())
+    {
         cout << "Cart is empty.\n";
         return;
     }
 
-    for (const auto& entry : items) {
-        const Item& item = entry.second.first;
-        int quantity = entry.second.second;
+    for (const auto& entry : items)
+    {
+        int itemID = entry.first;
+        int quantity = entry.second;
 
-        cout << "Item: " << item.getName()
-             << " | Price: " << item.getPrice()
-             << " | Quantity: " << quantity << endl;
+        if (menu.count(itemID))
+        {
+            const Item& item = menu.at(itemID);
+            cout << item.getName()
+                 << " | Price: " << item.getPrice()
+                 << " | Quantity: " << quantity << endl;
+        }
     }
 
-    cout << "Total = " << calculateTotal() << endl;
+    cout << "Total = " << calculateTotal(menu) << endl;
+}
+
+const map<int, int>& Cart::getItems() const
+{
+    return items;
 }

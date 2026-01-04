@@ -8,14 +8,17 @@ using namespace std;
 
 class Cart {
 private:
-    // itemID -> (Item, quantity)
-    map<int, pair<Item, int>> items;
+    // itemID -> quantity
+    map<int, int> items;
 
 public:
-    void addItem(const Item& item, int quantity);
-    void removeItem(int itemId);
-    double calculateTotal() const;
-    void displayCart() const;
+    void addItem(int itemID, int quantity);
+    void removeItem(int itemID);
+
+    double calculateTotal(const map<int, Item>& menu) const;
+    void displayCart(const map<int, Item>& menu) const;
+
+    const map<int, int>& getItems() const;
 };
 
 #endif

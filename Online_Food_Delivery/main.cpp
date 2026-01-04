@@ -1,27 +1,26 @@
 #include <iostream>
+#include <fstream>
+#include <map>
+#include <utility>
+
 #include "Item.h"
 #include "Cart.h"
 
 using namespace std;
 
-int main() {
+int main()
+{
+    map<int, Item> menu;
 
-    cout << "=== Testing Cart Class ===\n\n";
-
-    Item burger(1, "Burger", 50.0, 100, "Beef burger");
-    Item pizza(2, "Pizza", 80.0, 50, "Cheese pizza");
+    menu[1] = Item(1, "Burger", 50, 100, "Beef burger");
+    menu[2] = Item(2, "Pizza", 80, 50, "Cheese pizza");
 
     Cart cart;
+    cart.addItem(1, 2);
+    cart.addItem(2, 1);
 
-    cart.addItem(burger, 2);
-    cart.addItem(pizza, 1);
-    cart.addItem(burger, 1);
-
-    cart.displayCart();
-
-    cart.removeItem(2);
-
-    cart.displayCart();
+    cart.displayCart(menu);
 
     return 0;
 }
+
