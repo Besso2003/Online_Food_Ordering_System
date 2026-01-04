@@ -1,26 +1,40 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include <utility>
-
+#include <string>
 #include "Item.h"
 #include "Cart.h"
 
 using namespace std;
 
-int main()
-{
+int main() {
     map<int, Item> menu;
 
-    menu[1] = Item(1, "Burger", 50, 100, "Beef burger");
-    menu[2] = Item(2, "Pizza", 80, 50, "Cheese pizza");
+    ifstream file("items.txt");
+    if (!file) {
+        cout << "Failed to open items.txt\n";
+        return 1;
+    }
+
+    string line;
+    while (getline(file, line)) {
+        Item item(line);
+        menu[item.getId()] = item;
+    }
+    file.close();
+
+    cout << "--- MENU ---\n";
+    for (auto& pair : menu) {
+        pair.second.displayDetails();
+        cout << endl;
+    }
 
     Cart cart;
     cart.addItem(1, 2);
-    cart.addItem(2, 1);
+    cart.displayCart(menu);
 
+    cart.removeItem(1);
     cart.displayCart(menu);
 
     return 0;
 }
-
