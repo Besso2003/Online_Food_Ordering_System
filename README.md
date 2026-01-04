@@ -79,3 +79,19 @@ The use case diagram below shows the interactions for manager and delivery staff
 ![UseCase Manager & Delivery Staff](diagrams/Manager_Delivery.png)
 
 ---
+
+## Activity Diagrams
+
+1. Customer Activity Diagram
+
+The activity diagram below illustrates the customer workflow from browsing the menu to placing an order:
+
+![Activity Customer Diagram](diagrams/Activity_Customer_Diagram.jpeg)
+
+----
+
+2. Manager & Delivery Staff Activity Diagram
+
+The activity diagram below illustrates the manager and delivery staff workflow, including managing menu items and processing deliveries:
+
+![Activity Manager & Delivery Diagram](diagrams/Activity_ManagerDelivery_Diagram.jpeg)
