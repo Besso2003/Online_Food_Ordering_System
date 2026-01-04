@@ -53,9 +53,23 @@ The system's classes and their relationships are represented in the diagram belo
 
 ![Class Diagram](diagrams/Class_Diagram.png)
 
+---
+
 ## Sequence Diagram
 
 The sequence diagram below illustrates how a customer interacts with the system to place an order:
 
 ![Sequence Diagram](diagrams/Sequence_Diagram.jpeg)
+
+---
+
+## Use Case Diagrams
+
+1. Customer Use Case
+
+The use case diagram below shows the interactions a customer can perform in the system:
+
+![UseCase Customer Diagram](diagrams/Customer_Usecase.png)
+
+---
 
