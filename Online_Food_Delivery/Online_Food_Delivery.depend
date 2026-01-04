@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1767550541 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.cpp
+	"Item.h"
+	<iostream>
+
+1767550541 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\item.h
+	<string>
+
+1767552530 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\main.cpp
+	<iostream>
+	"Item.h"
+	"Cart.h"
+
+1767553353 c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.h
+	<map>
+	"Item.h"
+
+1767559048 source:c:\users\besso\onedrive\documents\iti cloud platform development\sw & uml\online_food_ordering_system\online_food_delivery\cart.cpp
+	"Cart.h"
+	<iostream>
+
