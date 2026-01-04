@@ -52,3 +52,10 @@ The **Online Food Ordering System** is a simple yet efficient application that a
 The system's classes and their relationships are represented in the diagram below:
 
 ![Class Diagram](diagrams/Class_Diagram.png)
+
+## Sequence Diagram
+
+The sequence diagram below illustrates how a customer interacts with the system to place an order:
+
+![Sequence Diagram](diagrams/Sequence_Diagram.jpeg)
+
