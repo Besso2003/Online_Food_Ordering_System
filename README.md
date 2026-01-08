@@ -50,7 +50,7 @@ The **Online Food Ordering System** is a lightweight application that allows cus
 
 The system's classes and their relationships are represented in the diagram below:
 
-![Class Diagram](diagrams/Class_Diagram.png)
+![Class Diagram](diagrams/Class_Diagram_Updated.png)
 
 > The class diagram reflects the **actual implementation**, including `Customer`, `Manager`, `Delivery_staff`, `Cart`, `Item`, `Order`, and the abstract `User` class. It shows proper inheritance, associations, and compositions.
 
